@@ -30,7 +30,7 @@ public class ConnectionTest extends Assert {
     @Test(expected = JedisConnectionException.class)
     public void checkWrongPort() {
 	client.setHost("localhost");
-	client.setPort(55665);
+	client.setPort(55665); 
 	client.connect();
     }
 
